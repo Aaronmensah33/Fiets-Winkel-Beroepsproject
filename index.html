@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home.page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <!--effecten-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!--in de banner zit de afbeelding in css-->
+    <div class="banner">
+        <!--Menubalk-->
+        <div class="navbar">
+            <a href="index.html">
+                <div data-aos="zoom-out" data-aos-delay="300">
+            <img src="logofiets.png" class="logo" width="120" height="120">
+                </div>
+            </a>
+            <ul>
+                <!--eerste niet verranderen dat is de homepage-->
+                <li data-aos="fade-down" data-aos-delay="700"><a href="index.html">Home</a></li>
+                <!--schrijf de link in de plaats van hashtag-->
+                <li data-aos="fade-down" data-aos-delay="800"><a href="#">Reservering</a></li>
+                <li data-aos="fade-down" data-aos-delay="900"><a href="prijzen/prijzen.html">Prijzen</a></li>
+                <li data-aos="fade-down" data-aos-delay="1000"><a href="#">informatie</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1 data-aos="fade-down" data-aos-delay="400">RENT A BIKE</h1>
+            <p data-aos="fade-down" data-aos-delay="500">Huur een fiets en reis door het mooie Barcelona</p>
+            <div data-aos="fade-down" data-aos-delay="600">
+                <!--eerste button link naar Reservering pagina link verranderen-->
+                <button type="button" onclick="location.href='index .html'"><span></span>HUREN!</button>
+                <!--tweede button link naar info pagina verranderen-->
+                <button type="button" onclick="location.href='index.html'"><span></span>OVER ONS</button>
+                
+            </div>
+        </div>
+        
+
+        
+    </div>
+
+     <!--5 sterren-->
+     <div class="center">
+        <div class="stars">
+            <input type="radio" id="five" name="rate" value="5">
+            <label data-aos="fade-down" data-aos-delay="800" for="five">★</label>
+            <input type="radio" id="four" name="rate" value="4">
+            <label data-aos="fade-down" data-aos-delay="700" for="four">★</label>
+            <input type="radio" id="three" name="rate" value="3">
+            <label data-aos="fade-down" data-aos-delay="600" for="three">★</label>
+            <input type="radio" id="two" name="rate" value="2">
+            <label data-aos="fade-down" data-aos-delay="500" for="two">★</label>
+            <input type="radio" id="one" name="rate" value="1">
+            <label data-aos="fade-down" data-aos-delay="400" for="one">★</label>
+            <span class="result"></span>
+        </div>
+        <div class="Ervaring">
+            <p data-aos="fade-down" data-aos-delay="300">Wat is uw ervaring</p>
+        </div>
+    </div>
+
+ <!--onderaan plaatsen-->   
+
+    <!--effecten-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>

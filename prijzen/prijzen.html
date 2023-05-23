@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>prijzen pagina</title>
+    <link rel="stylesheet" href="prijzen.css">
+    <!--effecten-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+
+        <div class="navbar">
+            <a href="../index.html">
+                <div data-aos="zoom-out" data-aos-delay="300">
+                    <img src="logofiets.png" class="logo" width="120" height="120">
+                </div>
+            </a>
+            <div class="navv" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <!--eerste niet verranderen dat is de homepage-->
+                <li data-aos="fade-down" data-aos-delay="700"><a href="../index.html">Home</a></li>
+                <!--schrijf de link in de plaats van hashtag-->
+                <li data-aos="fade-down" data-aos-delay="800"><a href="#">Reservering</a></li>
+                <li data-aos="fade-down" data-aos-delay="900"><a href="prijzen.html">Prijzen</a></li>
+                <li data-aos="fade-down" data-aos-delay="1000"><a href="#">informatie</a></li>
+            </ul>
+        </div>
+            <i class="fa fa-bicycle" onclick="showMenu()"></i>
+
+    </section>
+    
+<!--javascript for toggle menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <div class="content">
+        <h1 data-aos="fade-down" data-aos-delay="400" style="margin-top: 20px;">Prijzen</h1>
+        <p data-aos="fade-down" data-aos-delay="500">Huur een fiets en reis door het mooie Barcelona</p>
+        <div data-aos="fade-down" data-aos-delay="600">
+            <div class="knoppen">
+                <div class="fietsen">
+                    <!--hier moet de link naar de reserveringpagina voor fietsen-->
+                <a href="index.html" style="text-decoration: none; color: white;">
+                <img style="border-radius: 5%;" src="bsm171130_006_1.png" class="logo" width="200" height="200">
+                <div class="textfietsen">
+                    <p><b>Fietsen</b></p>
+                </div>
+                </div>
+                
+                <div class="tour">
+                    <!--hier moet de link naar de reserveringpagina voor de tour-->
+                <a href="index.html" style="text-decoration: none; color: white;">
+                <img style="border-radius: 5%;" src="a2.png" class="logo" width="200" height="200">
+                <div class="texttour">
+                    <p><b>Tour</b></p>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!--effecten-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
+</body>
+
+</html>
